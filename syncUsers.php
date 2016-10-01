@@ -1,7 +1,7 @@
 <?php
 require_once('config.php');
 $mysqli = new mysqli($config['dbhost'], $config['dbuser'], $config['dbpass'], $config['db']);
-$ldapconn = ldap_connect($config['ldaphost'], 389) or die("Could not connect to LDAP server.");
+$ldapconn = ldap_connect($config['ldaphost'], $config['ldapport']) or die("Could not connect to LDAP server.");
 ldap_set_option($ldapconn, LDAP_OPT_PROTOCOL_VERSION, 3);
 $ldapbind = ldap_bind($ldapconn, $config['ldapbind'], $config['ldappass']) or die ("Error trying to bind: ".ldap_error($ldapconn));
 

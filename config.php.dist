@@ -6,6 +6,7 @@ $config['db'] = 'test';
 $config['dbhost'] = '127.0.0.1';
 $config['ldapbind'] = 'cn=Kasper,o=typo3';
 $config['ldaphost'] = '127.0.0.1';
+$config['ldapport'] = '636';
 $config['ldappass'] = 'joh316';
 $config['ldappath_people'] = 'ou=people,o=typo3';
 $config['ldappath_groups'] = 'ou=groups,o=typo3';
